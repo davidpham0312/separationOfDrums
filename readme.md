@@ -17,7 +17,7 @@ Below is all the filenames and their functionalities:
                                     Running this file with terminal requires a second parameter - an input audio file.
   				
   								
-  --- test_multiple_gammas:         Test different ranges of compression (gamma) while performing separation, which must be in the limit 0 <= gamma <= 1
+  --- test_multiple_gammas:         Test different ranges of compression (gamma) while performing separation, which must be in the limit 0 <= gamma <= 1. 
                                     This file asks for how many values of gamma will be used (which will be distributed linearly within the allowed range).
   				
   								
