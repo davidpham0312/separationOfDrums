@@ -3,15 +3,13 @@ Below is all the filenames and their functionalities:
 
   --- audioIn
   
-      --- police03short.wav:        original audio file, including normal music with clear bass and drums.
-      
+      --- police03short.wav:        original audio file, including normal music with clear bass and drums.    
       --- project_test1.wav:        original audio file, including music and voice of a singer.
       
       
   --- audioOut
   
       --- H.wav:                    Harmonic component audio file, will be overwritten if the 3 code files are executed.
-      
       --- P.wav:                    Percussive component audio file, will be overwritten if the 3 code files are executed.
   
   
@@ -30,15 +28,10 @@ Below is all the filenames and their functionalities:
   --- analysis
   
       --- SNR_k.png:                Signal-to-noise comparison between 5 k values, linearly from 0 to 50.
-      
-      --- SNR_gamma.png:            Signal-to-noise comparison between 5 gammas, linearly from 0 to 1.
-      
-      --- PowSpec_5_k.png: 	        Power spectrogram of 5 k values, linearly from 0 to 50.
-      
-      --- PowSpec_5_gammas.png:     Power spectrogram of 5 gamma values, linearly from 0 to 1.
-      
-      --- PowerSpec_org_H_P.png:    Output power spectrograms of the file Separator.py with input file police03short.wav
-      
+      --- SNR_gamma.png:            Signal-to-noise comparison between 5 gammas, linearly from 0 to 1.      
+      --- PowSpec_5_k.png: 	        Power spectrogram of 5 k values, linearly from 0 to 50.      
+      --- PowSpec_5_gammas.png:     Power spectrogram of 5 gamma values, linearly from 0 to 1.     
+      --- PowerSpec_org_H_P.png:    Output power spectrograms of the file Separator.py with input file police03short.wav   
       --- PowSpec_other.png:        Output power spectrograms of the file Separator.py with input file project_test1.wav
   
   
