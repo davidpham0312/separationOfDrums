@@ -73,8 +73,8 @@ def separate(filename, gamma=1, a_h=1, a_p=1, k_max=20):
     x_p = lb.istft(P ** (1 / 2 * gamma) * np.exp(1j * np.angle(F)),
                    length=n_audio)
 
-    sf.write("H.wav", x_h, fs)
-    sf.write("P.wav", x_p, fs)
+    sf.write("audioOut/H.wav", x_h, fs)
+    sf.write("audioOut/P.wav", x_p, fs)
 
 
 if len(sys.argv) == 1:
@@ -95,8 +95,8 @@ else:
 
     # Separate into harmonics & percussion
     separate(filename)
-    audioH, srH = lb.load('H.wav', sr=None)
-    audioP, srP = lb.load('P.wav', sr=None)
+    audioH, srH = lb.load('audioOut/H.wav', sr=None)
+    audioP, srP = lb.load('audioOut/P.wav', sr=None)
 
     # Get the separated (harmonics-only & percussions-only) power spectrograms
     DH = lb.amplitude_to_db(np.abs(lb.stft(audioH)), ref=np.max)

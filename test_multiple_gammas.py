@@ -20,8 +20,8 @@ def test_different_gamma(filename, num_of_gamma):
     for gamma in gammas:
         # Separate into harmonics & percussion
         separate(filename, gamma=gamma)
-        audioH, srH = lb.load('H.wav', sr=None)
-        audioP, srP = lb.load('P.wav', sr=None)
+        audioH, srH = lb.load('audioOut/H.wav', sr=None)
+        audioP, srP = lb.load('audioOut/P.wav', sr=None)
 
         # Get the separated (harmonics-only & percussions-only) power spectrograms
         DH = lb.amplitude_to_db(np.abs(lb.stft(audioH)), ref=np.max)

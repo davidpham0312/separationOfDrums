@@ -22,8 +22,8 @@ def test_different_iterations(filename, k_num, k_max):
     for k in k_arr:
 
         separate(filename, k_max=k)
-        audioH, srH = lb.load("H.wav", sr=None)
-        audioP, srP = lb.load("P.wav", sr=None)
+        audioH, srH = lb.load("audioOut/H.wav", sr=None)
+        audioP, srP = lb.load("audioOut/P.wav", sr=None)
 
         DH = lb.amplitude_to_db(np.abs(lb.stft(audioH)), ref=np.max)
         DP = lb.amplitude_to_db(np.abs(lb.stft(audioP)), ref=np.max)
