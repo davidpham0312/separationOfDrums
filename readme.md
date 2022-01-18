@@ -1,3 +1,4 @@
+# Separation of drums #
 The implementation aims to separate harmonic and percussive components of a music signals.
 The directory contains all the input and output audio files, Python implementation as well as spectrograms and SNR analysis.
 Below is all the filenames and their functionalities:
